@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labyrinth Game: Jogar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <div class="container victory">
+      <h1>Vitória!</h1>
+      <p>Parabéns, você venceu!</p>
+      <p class="time">Tempo de Jogo: 00s</p>
+      <p class="redirect"></p>
+    </div>
+    <div class="container">
+      <div>
+        <h1 class="title">
+          Labyrinth <br />
+          Game
+        </h1>
+        <p class="time"></p>
+      </div>
+
+      <canvas id="canvas" width="380"></canvas>
+    </div>
+    <div class="buttonsControl">
+      <button onclick="player.movX -= 1; renderPlayer()">
+        <i class="ti ti-arrow-big-left"></i>
+      </button>
+      <button onclick="player.movX += 1; renderPlayer()">
+        <i class="ti ti-arrow-big-right"></i>
+      </button>
+      <button onclick="player.movY -= 1; renderPlayer()">
+        <i class="ti ti-arrow-big-up"></i>
+      </button>
+      <button onclick="player.movY += 1; renderPlayer()">
+        <i class="ti ti-arrow-big-down"></i>
+      </button>
+    </div>
+    <script src="../scripts/game.js"></script>
+  </body>
+</html>
