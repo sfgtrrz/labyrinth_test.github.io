@@ -7,7 +7,6 @@ const redirect = document.querySelector(".redirect");
 const currentURL = window.location.href;
 const gameLevel = currentURL.substring(currentURL.indexOf("game") + 12);
 const canvasWidth = 380;
-const trash = 0;
 
 const colors = {
   player: "#0903A6",
