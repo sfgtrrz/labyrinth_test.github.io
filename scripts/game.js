@@ -76,7 +76,7 @@ function victory() {
   }, 1000);
 
   setTimeout(() => {
-    window.location.href = "https://carloseduts.github.io/Labyrinth-Game/";
+    window.location.href = "https://se-interns-24.github.io/labyrinth_test.github.io/";
   }, 10000);
 }
 
