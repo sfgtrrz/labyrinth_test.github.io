@@ -67,11 +67,11 @@ function timer() {
 function victory() {
   buttonsControl.style.display = "none";
   victoryPage.style.display = "flex";
-  time[0].innerText = `Tempo de Jogo: ${timeElapsed}s`;
+  time[0].innerText = `Time of play: ${timeElapsed}s`;
   let timer = 10;
 
   setInterval(() => {
-    redirect.innerText = `Aguarde, você será redirecionado para a home em ${timer} segundos.`;
+    redirect.innerText = `you will be redirected to the home page in ${timer} seconds.`;
     timer--;
   }, 1000);
 
