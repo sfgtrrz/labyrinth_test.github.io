@@ -59,7 +59,7 @@ let size = tileSize(currentURL.substring(currentURL.indexOf("game") + 11)[0]);
 function timer() {
   setInterval(() => {
     timeElapsed += 1;
-    time[1].innerText = `Tempo: ${timeElapsed} s`;
+    time[1].innerText = `Time elapsed: ${timeElapsed} s`;
   }, 1000);
 }
 
